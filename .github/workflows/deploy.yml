@@ -48,7 +48,7 @@ jobs:
         run: |
           pnpm run docs:build
           mkdir staging
-          cp ./packages/demo/.vitepress/dist/* staging -r
+          cp ./.vitepress/dist/* staging -r
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
